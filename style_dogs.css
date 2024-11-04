@@ -1,0 +1,98 @@
+.osnova{
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.back{
+    border: solid rgba(0, 0, 255, 0) 25pt;
+    background-color: rgb(219, 219, 218);
+}
+.container3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.7fr;
+}
+
+.with_photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main p{
+    font-size: 15pt;
+    text-align: left;
+    color: black;
+}
+
+.container3 div{
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+main img{
+    margin-left: 13%;
+    margin-top: 2%;
+    width: 93%;
+}
+
+li{
+    font-size: 15pt;
+}
+
+@media only screen and (orientation: portrait) and (min-device-width: 0px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .osnova{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .back{
+        border: solid rgba(0, 0, 255, 0) 0px;
+    }
+
+    .with_photo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 0.5fr;
+    }
+
+    main p{
+        font-size: 22pt;
+    }
+
+    main img{
+        margin-left: 0%;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .container3 h2{
+        font-size: 30pt;
+    }
+
+    .container3 li{
+        font-size: 21pt;
+    }
+}
+
+@media only screen and (min-device-width : 568px) and (max-device-width : 1024px) {
+	.with_photo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    main img{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        width: 90%;
+    }
+
+    .back{
+        border: solid rgba(0, 0, 255, 0) 0pt;
+        background-color: rgb(219, 219, 218);
+    }
+}

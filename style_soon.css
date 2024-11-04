@@ -1,0 +1,147 @@
+h1{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    color: rgb(18, 136, 136);
+}
+
+.container3{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.5fr 0.6fr 5fr;
+}
+
+.osnova{
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.back{
+    border: solid rgba(0, 0, 255, 0) 80px;
+    background-color: rgb(219, 219, 218);
+}
+
+.primer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.text{
+    font-size: 16pt;
+    margin-top: 4%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+main img{
+    width: 70%;
+    border: solid 5px rgb(18, 136, 136);
+    margin-bottom: 5%;
+}
+
+main h2{
+    text-align: center;
+}
+
+main h3{
+    font-size: 17pt;
+}
+
+.left{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 1%;
+}
+
+.right{
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 20%;
+}
+
+@media only screen and (orientation: portrait) and (min-device-width: 0px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    .back{
+        border: solid rgba(0, 0, 255, 0) 0px;
+        background-color: rgb(219, 219, 218);
+    }
+
+    .osnova{
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: white;
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
+
+    main img{
+        width: 100%;
+        border: solid 0px rgb(18, 136, 136);
+    }
+
+    .left{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
+    .right{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
+    .primer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    main h3{
+        font-size: 25pt;
+    }
+
+    .text p{
+        font-size: 20pt;
+    }
+
+    .container3{
+        grid-template-rows: 5.5fr 0.6fr 8fr;
+    }
+
+    h1{
+        font-size: 30pt;
+    }
+    main h2{
+        padding-top: 5%;
+        font-size: 26pt;
+    }
+}
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 738px) {
+	.osnova{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .back{
+        border: solid rgba(0, 0, 255, 0) 18px;
+    }
+    .text{
+        font-size: 17pt;
+    }
+    .container3{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 52% 3% 45%;
+    }
+    main h3{
+        font-size: 20pt;
+    }
+
+    main img{
+        width: 90%;
+        border: solid 5px rgb(18, 136, 136);
+        margin-bottom: 5%;
+    }
+}
